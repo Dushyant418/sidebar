@@ -1,0 +1,84 @@
+@import url(./root.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+.openbtn {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    background: var(--Gradient, linear-gradient(97deg, #128DFF -4.95%, #1444EF 109.04%));
+    padding: 13px 35px;
+    border: none;
+}
+
+.openbtn:hover {
+    box-shadow: 0px 1px 12px 0px #1444EF;
+}
+
+.link-btn {
+    width: 230px;
+    padding: 13px 35px;
+    gap: 10px;
+    border-radius: 4px;
+    border: none;
+    border: 1px solid var(--Blue, #128DFF);
+}
+
+.link-btn:hover {
+    background: var(--Gradient, linear-gradient(97deg, #128DFF -4.95%, #1444EF 109.04%));
+    color: var(--color-white);
+}
+
+.ff {
+    font-family: Inter;
+}
+
+.fw {
+    font-weight: 600;
+}
+
+.slidebar {
+    width: 286px;
+    flex-shrink: 0;
+    border-radius: 0px 16px 16px 0px;
+    background: var(--White, #FFF);
+    box-shadow: 9px 4px 26px 0px rgba(0, 0, 0, 0.06);
+    padding: 78px 27px 29px;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    left: -100%;
+}
+
+.cut {
+    position: absolute;
+    top: 21px;
+    right: 27px;
+    cursor: pointer;
+}
+
+.slidebar.active {
+    left: 0;
+}
+
+.gradiant{
+    width: 100%;
+    height: 100vh;
+    opacity: 0.25;
+    background: var(--Black, #000);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -100%;
+}
+.gradiant.active{
+    left: 0;
+} 
